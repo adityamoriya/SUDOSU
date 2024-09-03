@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game Project!</title>
+    <style>
+        .head {
+            display: flex;
+            justify-content: center;
+            color: red;
+            font-size: 80px;
+            font-family: inherit;
+        }
+
+        .box {
+            display: flex;
+            margin: 2px 403px;
+        }
+
+        #boxes {
+            /* border: 2px solid red; */
+            background-color: black;
+            padding: 7px 7px;
+            margin: 15px;
+            border-radius: 23px;
+
+            transition: all 0.5s ease-in;
+
+
+        }
+        #boxes:hover{
+            transform: rotate(360deg);
+            /* transform: scale(3); */
+        }
+
+        img {
+            width: 165px;
+        }
+
+        .box p {
+            color: red;
+            text-align: center;
+            margin: 34px;
+        }
+
+        .ab {
+            color: red;
+            padding: 70px;
+        }
+
+        .ab p {
+            font-size: 2rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        .down p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            justify-content: center;
+            display: flex;
+            font-size: 25px;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="head">Refresh Me &#128509</h1>
+
+    <div class="box">
+        <div class="ab">
+            <p>Player-1</p>
+            <div id="boxes">
+                <img src="/DOM/DOM_project/Images/dice6.png" alt="">
+            </div>
+        </div>
+
+        <div class="ab">
+            <p>Player-2</p>
+            <div id="boxes">
+                <img src="/DOM/DOM_project/Images/dice6.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="pro1_index.js"></script>
+
+    <footer class="down">
+        <p>www.AppBrewery.com</p>
+    </footer>
+
+</body>
+
+</html>
